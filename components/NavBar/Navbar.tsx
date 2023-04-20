@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import {
+  RiMenu3Fill,
+  RiCloseLine,
+} from "react-icons/ri";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -16,6 +20,7 @@ const Navbar = () => {
                 src={Logo}
                 class="h-14 w-auto mt-4"
               /> */}
+              Logo
         </a>
       </div>
       <nav
@@ -40,12 +45,12 @@ const Navbar = () => {
         </Link>
        
       </nav>
-      {/* <button
+      <button
         onClick={() => setShowMenu(!showMenu)}
         className="xl:hidden text-2xl p-2"
       >
         {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
-      </button> */}
+      </button>
     </header>
   );
 };

@@ -1,6 +1,9 @@
 import Head from "next/head";
 import { GetStaticProps } from "next";
 import Container from "../components/container";
+import Hero from '../components/Hero/Hero'
+import Proposals from '../components/proposals/Proposals'
+import Contact from '../components/contact/Contact'
 import MoreStories from "../components/more-stories";
 import HeroPost from "../components/hero-post";
 import Intro from "../components/intro";
@@ -18,9 +21,10 @@ export default function Index() {
         <title>Yo Quiero a Suba</title>
       </Head>
       <Container>
-        <div className="flex items-center justify-center w-full h-screen">
-          Yo quiero a Suba se está creando ...
-        </div>
+
+        <Hero />
+        <Proposals />
+       <Contact />
 
         {/* <Intro /> */}
         {/* {heroPost && (

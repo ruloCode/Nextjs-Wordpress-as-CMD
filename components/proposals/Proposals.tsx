@@ -42,7 +42,7 @@ export const CardList = () => {
       
       return (
         <div>
-          <h2 className="text-center text-2xl font-bold mb-8 mt-8">Propuestas</h2>
+          <h2 className="text-center text-2xl font-bold mb-8 mt-8 secondaryFont">Propuestas</h2>
           <div className="flex flex-wrap -mx-4">
             {cards.map((card) => (
               <Card  key={card.id} {...card} />

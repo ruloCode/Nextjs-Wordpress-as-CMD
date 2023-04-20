@@ -7,7 +7,7 @@ export const Card = ({ imageSrc, alt, title, description,id }) => {
       <Link href={`/propuestas#${id}`} className="">
 
 
-        <div className="border rounded-md overflow-hidden">
+        <div className="border rounded-md overflow-hidden card-container">
           <div className="relative h-0 pb-[56.25%]">
             <Image
               src={imageSrc}
@@ -17,7 +17,7 @@ export const Card = ({ imageSrc, alt, title, description,id }) => {
             />
           </div>
           <div className="p-4">
-            <h2 className="text-xl font-bold mb-2">{title}</h2>
+            <h2 className="text-xl font-bold mb-2 secondaryFont">{title}</h2>
             <p className="text-gray-700">{description}</p>
           </div>
         </div>

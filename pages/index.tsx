@@ -20,9 +20,10 @@ export default function Index() {
       <Head>
         <title>Yo Quiero a Suba</title>
       </Head>
-      <Container>
 
         <Hero />
+      <Container>
+
         <Proposals />
        <Contact />
 

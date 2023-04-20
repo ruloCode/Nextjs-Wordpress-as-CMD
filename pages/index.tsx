@@ -12,8 +12,8 @@ import { getAllPostsForHome } from "../lib/api";
 import { CMS_NAME } from "../lib/constants";
 
 export default function Index() {
-  // const heroPost = edges[0]?.node;
-  // const morePosts = edges.slice(1);
+  // const heroPost = edges[0]?.node
+  // const morePosts = edges.slice(1)
 
   return (
     <Layout preview={null}>
@@ -26,6 +26,9 @@ export default function Index() {
         <Proposals />
        <Contact />
 
+       {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
+
+
         {/* <Intro /> */}
         {/* {heroPost && (
           <HeroPost
@@ -37,7 +40,6 @@ export default function Index() {
             excerpt={heroPost.excerpt}
           />
         )} */}
-        {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
 
         {/* nuevo */}
       </Container>

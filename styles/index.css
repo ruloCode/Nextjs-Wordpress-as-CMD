@@ -160,3 +160,18 @@ body {
 .navItem:hover {
   transform: scale(1.05);
 }
+
+
+.logoWithText {
+  /* border: red solid 1px; */
+  /* display: none; */
+}
+
+
+@media (min-width: 768px) {
+  .logoWithText {
+    /* border: red solid 1px; */
+  display: none;
+
+  }
+}

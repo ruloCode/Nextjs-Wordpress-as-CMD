@@ -1,8 +1,8 @@
 import Card from '../Card';
-import genero from '../../public/images/genero.jpeg'
-import movilidad from '../../public/images/movilidad.jpeg'
-import futuroVerde from '../../public/images/futuroverde.jpeg'
-import bienestar from '../../public/images/bienestar.jpeg'
+import genero from '../../public/images/Genero.jpg'
+import movilidad from '../../public/images/Movilidad.jpg'
+import futuroVerde from '../../public/images/FuturoVerde.jpg'
+import bienestar from '../../public/images/Bienestar.jpg'
 
 
 
@@ -42,7 +42,7 @@ export const CardList = () => {
       
       return (
         <div>
-          <h2 className="text-center text-2xl font-bold mb-8 mt-8 secondaryFont">Propuestas</h2>
+          <h2 className="uppercase text-center text-2xl font-bold mb-8 mt-8 secondaryFont">Propuestas</h2>
           <div className="flex flex-wrap -mx-4">
             {cards.map((card) => (
               <Card  key={card.id} {...card} />

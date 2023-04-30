@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { GetStaticProps } from "next";
 import Container from "../components/container";
-import Hero from '../components/Hero/Hero'
-import Proposals from '../components/proposals/Proposals'
-import Contact from '../components/contact/Contact'
+import Hero from "../components/Hero/Hero";
+import Proposals from "../components/proposals/Proposals";
+import Contact from "../components/contact/Contact";
 import MoreStories from "../components/more-stories";
 import HeroPost from "../components/hero-post";
 import Intro from "../components/intro";
@@ -21,14 +21,12 @@ export default function Index() {
         <title>Yo Quiero a Suba</title>
       </Head>
 
-        <Hero />
+      <Hero />
       <Container>
-
         <Proposals />
-       <Contact />
+        <Contact />
 
-       {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
-
+        {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
 
         {/* <Intro /> */}
         {/* {heroPost && (

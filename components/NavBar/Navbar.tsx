@@ -14,7 +14,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white  shadow-lg py-4 px-6 flex items-center justify-between xl:justify-start w-full py-4 px-8 h-[10vh] z-50">
+      <header className="sticky  top-0 z-50 bg-white shadow-lg py-4 px-6 flex items-center justify-between xl:justify-start w-full py-4 px-8 h-20 z-50">
+
       <nav
         className={`fixed bg-white w-[80%] md:w-[40%] xl:w-full h-full ${
           showMenu ? "left-0 justify-center " : "-left-full"
@@ -26,9 +27,9 @@ const Navbar = () => {
               <Image
                 src={LogoWithText}
                 alt="Logo"
-                width={120}
-                height={120}
-                className=" w-auto"
+                width={150}
+                height={150}
+                // className=" w-auto"
               />
             </Link>
           </div>

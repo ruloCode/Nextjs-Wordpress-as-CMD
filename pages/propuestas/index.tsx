@@ -1,9 +1,9 @@
 import React from "react";
 import Card from '../../components/CardProposal';
-import genero from 'public/images/genero.jpeg'
-import movilidad from 'public/images/movilidad.jpeg'
-import futuroVerde from 'public/images/futuroverde.jpeg'
-import bienestar from 'public/images/bienestar.jpeg'
+import genero from '../../public/images/Genero.jpg'
+import movilidad from 'public/images/Movilidad.jpg'
+import futuroVerde from 'public/images/FuturoVerde.jpg'
+import bienestar from 'public/images/Bienestar.jpg'
 
 import PostPreview from "../../components/post-preview";
 import Header from "../../components/header";

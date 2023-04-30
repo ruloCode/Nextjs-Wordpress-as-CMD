@@ -49,14 +49,14 @@ export default function Index() {
   return (
     <Layout preview={null}>
       <Head>
-        <title>Propuestas</title>
+        <title >Propuestas</title>
       </Head>
 
       <Container>
         {/* <Header /> */}
 
         <section>
-  <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
+  <h2 className="uppercase mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
     Propuestas
   </h2>
   <div className="grid grid-cols-1 gap-y-20 md:gap-y-32 lg:gap-x-32 mb-32">

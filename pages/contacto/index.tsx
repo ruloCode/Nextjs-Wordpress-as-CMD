@@ -26,7 +26,7 @@ export default function Index() {
       <div className="container mx-auto px-4 py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h2 className="text-2xl font-bold mb-4">Contacto</h2>
+          <h2 className=" uppercase text-2xl font-bold mb-4">Contacto</h2>
           <form className="grid grid-cols-2 gap-4">
             <div className="col-span-2 sm:col-span-1">
               

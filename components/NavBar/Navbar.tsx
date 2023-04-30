@@ -36,7 +36,7 @@ const Navbar = () => {
 
         <Link
           href="/posts"
-          className={`${
+          className={`secondaryFont uppercase ${
             isActive("/posts") ? "border-b font-bold navItem" : "navItem"
           }`}
         >
@@ -44,7 +44,7 @@ const Navbar = () => {
         </Link>
         <Link
           href="/propuestas"
-          className={`${
+          className={`secondaryFont uppercase ${
             isActive("/propuestas") ? "border-b font-bold navItem" : "navItem"
           }`}
         >
@@ -52,13 +52,47 @@ const Navbar = () => {
         </Link>
         <Link
           href="/contacto"
-          className={`${
+          className={`secondaryFont uppercase ${
             isActive("/contacto") ? "border-b font-bold navItem" : "navItem"
           }`}
         >
           Contacto
         </Link>
+
+        {showMenu && (
+          <div className="py-16 flex lg:flex-row items-center justify-center gap-8 text-lg">
+          <a
+            href="https://www.facebook.com/nelson.guevarafarfan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-facebook-square  socialIcon "></i>
+          </a>
+          <a
+            href="https://www.instagram.com/nelson.guevarafarfan/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-instagram socialIcon"></i>
+          </a>
+          <a
+            href="https://twitter.com/NelsonGuevaraF"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-twitter socialIcon"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@nelsonguevarafarfan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-tiktok socialIcon"></i>
+          </a>
+        </div>
+        )}
       </nav>
+      
       <div></div>
 
       <div className={`logo   ${showMenu ? "z-0 " : "z-50"}`}>

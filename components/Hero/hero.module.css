@@ -1,0 +1,66 @@
+.hero {
+  background-image: url("../../public/images/Bienestar.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Otros estilos de la sección hero */
+  height: 80vh;
+
+  margin: 0  auto;
+
+
+}
+
+.hero__content {
+  /* Estilos del contenido del Hero */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+
+
+  width: 90%;
+
+}
+
+
+
+.hero__description {
+  max-width: 50vw;
+
+}
+
+.hero__title {
+  /* Estilos del título */
+}
+
+.hero__description {
+  /* Estilos de la descripción */
+}
+
+.hero__button {
+  /* Estilos del botón de acción */
+}
+
+
+
+
+@media only screen and (min-width: 768px){
+	/*Small smartphones [325px -> 425px]*/
+.hero__content {
+flex-direction: row;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 2rem;
+}
+
+.hero__description {
+  text-align: left;
+
+}
+  
+}

@@ -1,0 +1,12 @@
+.testimonial {
+  background-color: #fafafa;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  border-radius: .5rem;
+
+  height: auto;
+  max-height: 300px;
+}

@@ -1,54 +1,16 @@
 import React from "react";
-import SwiperCore, { Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import styles from './hero.module.css';
 
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-SwiperCore.use([Navigation, Pagination]);
-
-const videos = [
-  {
-    id: 1,
-    src: "https://www.w3schools.com/html/mov_bbb.mp4",
-    title: "Video 1",
-  },
-  {
-    id: 2,
-    src: "https://www.w3schools.com/html/mov_bbb.mp4",
-    title: "Video 2",
-  },
-  {
-    id: 3,
-    src: "https://www.w3schools.com/html/mov_bbb.mp4",
-    title: "Video 3",
-  },
-];
-
-export const Hero = () => {
+const Hero = () => {
   return (
-    <div className="relative">
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-        loop={true}
-      >
-        {videos.map((video) => (
-          <SwiperSlide key={video.id}>
-            <video className="w-full" autoPlay muted loop>
-              <source src={video.src} type="video/mp4" />
-            </video>
-            <div className="absolute inset-0 flex justify-center items-center">
-              <h1 className="text-5xl text-white">{video.title}</h1>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <div className={`${styles.hero} bg-blue-500 text-white py-10`}>
+      <div className={`${styles.hero__content} container mx-auto`}>
+        <div className={`${styles.hero__description} text-center`}>
+          <h1 className="text-4xl font-bold mb-4">Título del Hero</h1>
+          <p className="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis fringilla lacus, sit amet euismod quam molestie sit amet. Proin in risus eu felis tristique mattis vel nec arcu.</p>
+        </div>
+          <button className="bg-white text-blue-500 font-semibold py-2 px-4 rounded-full shadow-lg">Botón de Acción</button>
+      </div>
     </div>
   );
 };

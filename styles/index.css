@@ -186,3 +186,8 @@ body {
   padding: 0.5rem 1rem;
   transition: 0.2s ease-in-out;
 }
+
+
+.swiper{
+  overflow: visible;
+}

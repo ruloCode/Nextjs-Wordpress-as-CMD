@@ -8,6 +8,7 @@ import MoreStories from "../components/more-stories";
 import HeroPost from "../components/hero-post";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
+import Testimonials from '../components/testimonials/Testimonials'
 import { getAllPostsForHome } from "../lib/api";
 import { CMS_NAME } from "../lib/constants";
 
@@ -23,6 +24,7 @@ export default function Index() {
 
       <Hero />
       <Container>
+        <Testimonials />
         <Proposals />
         <Contact />
 

@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-accent-1 border-t border-accent-2">
+    <footer className="bg-accent-1 border-t border-accent-2 mt-20">
       <Container>
 
         <div className="mt-8 flex flex-col lg:flex-row items-center justify-center gap-8 flex-col text-lg ">

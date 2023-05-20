@@ -120,9 +120,9 @@ const Navbar = () => {
 
       <div className={`${showMenu ? "hidden" : ""}`}>
         <Button
-          text="Acción"
+          text="Unirme ahora"
           onClick={() => {}}
-          className="hidden xl:block"
+          className="primaryButton hidden xl:block"
         />
       </div>
 

@@ -26,7 +26,8 @@ export default function Index() {
       <Container>
         <Testimonials />
         <Proposals />
-        <Contact />
+        <Testimonials />
+        {/* <Contact /> */}
 
         {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
 

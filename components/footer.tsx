@@ -1,19 +1,33 @@
 import Container from "./container";
-import { EXAMPLE_PATH } from "../lib/constants";
-import LogoImage from '../public/images/Text.png'
-import Image from 'next/image'
-
+import { usePathname, useRouter } from "next/navigation";
+import LogoImage from "../public/images/Text.png";
+import Image from "next/image";
+import Button from "../atomic-ds/atoms/Button";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  // Verificar si la URL contiene la palabra "contacto"
+  const isContactPage = pathname === "/contacto";
+  console.log(isContactPage)
+  const router = useRouter();
+ 
+  console.log(pathname, isContactPage);
   return (
     <footer className="bg-accent-1 border-t border-accent-2 mt-20">
+      {!isContactPage && (
+        <div className="slogan ">
+          <h2 className="secondaryFont uppercase text-2xl font-bold mb-4">
+            Conectando personas, Construyendo Futuro
+          </h2>
+          <Button text="Unirme ahora" onClick={() => router.push('/contacto')} />
+        </div>
+      )}
+
       <Container>
-
-        <div className="mt-8 flex flex-col lg:flex-row items-center justify-center gap-8 flex-col text-lg ">
-        {/* <p className="secondaryFont">Nelson Guevara Farfan</p> */}
-
-        <div >
-          {/* <Link href="/" className=""> */}
+        <div className="mt-8 flex flex-col lg:flex-row items-center justify-center gap-8 text-lg ">
+          <div>
+            {/* <Link href="/" className=""> */}
             <Image
               src={LogoImage}
               alt="Logo"
@@ -21,10 +35,15 @@ export default function Footer() {
               // height={50}
               className="h-16 w-auto"
             />
-          {/* </Link> */}
-      </div>
-
+            {/* </Link> */}
+          </div>
+        
         </div>
+        {isContactPage && (
+            <p className="text-1xl font-bold text-center mt-3 ">
+              Conectando personas, Construyendo Futuro
+            </p>
+          )}
 
         <div className="py-16 flex lg:flex-row items-center justify-center gap-8 text-lg">
           <a

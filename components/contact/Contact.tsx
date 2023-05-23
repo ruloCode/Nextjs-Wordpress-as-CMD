@@ -18,9 +18,11 @@ const ContactSection = () => {
           </a>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <a href="https://www.ejemplo.com" target="blank">
-            <Image width={2000} height={1000} alt={`contacto`} src={imageSrc} />
-          </a>
+          <p className="text-lg text-center font-bold text-white bg-blue-500 p-4 rounded-lg">
+            Únete a nuestra comunidad de progreso y calidad social. ¡Podemos
+            marcar la diferencia y construir un futuro mejor! Celebremos
+            nuestros logros juntos.
+          </p>
         </div>
       </div>
     </div>

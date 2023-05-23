@@ -2,21 +2,24 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 // import useWindowWidth from 'utils/hooks/useWindowWidth';
+import { usePathname, useRouter } from "next/navigation";
+
 
 import LogoSVG from "../../public/images/logo2.svg";
 import LogoWithText from "../../public/images/logo_with_text.png";
-import { useRouter } from "next/router";
+
 import { RiMenu3Fill, RiCloseLine } from "react-icons/ri";
 import Button from "../../atomic-ds/atoms/Button";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const pathname = usePathname();
 
   // const windowDimensions = useWindowWidth();
 
   const router = useRouter();
   const isActive = (path) => {
-    return router.pathname === path;
+    return pathname === path;
   };
 
   return (
@@ -48,14 +51,14 @@ const Navbar = () => {
         >
           Territorio
         </Link>
-        <Link
+        {/* <Link
           href="/propuestas"
           className={`secondaryFont uppercase ${
             isActive("/propuestas") ? "border-b font-bold navItem" : "navItem"
           }`}
         >
           Propuestas
-        </Link>
+        </Link> */}
         <Link
           href="/contacto"
           className={`secondaryFont uppercase ${
@@ -121,7 +124,7 @@ const Navbar = () => {
       <div className={`${showMenu ? "hidden" : ""}`}>
         <Button
           text="Unirme ahora"
-          onClick={() => {}}
+          onClick={() => router.push('/contacto')}
           className="primaryButton hidden xl:block"
         />
       </div>

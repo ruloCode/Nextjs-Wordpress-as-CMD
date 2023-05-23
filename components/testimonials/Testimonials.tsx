@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { Pagination , EffectCube, EffectCoverflow} from "swiper";
+import { Pagination, EffectCube, EffectCoverflow } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./testimonials.module.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 
 const reviews = [
   {
@@ -29,9 +28,19 @@ const reviews = [
   },
 ];
 
-const ReviewSlider = () => {
+interface ReviewSlider {
+  title?: string;
+}
+
+const ReviewSlider: React.FC<ReviewSlider> = ({ title }) => {
   return (
     <div className="relative mt-20">
+      {title && (
+        <div>
+          <h3 className="title text-center">{title}</h3>
+        </div>
+      )}
+
       <Swiper
         effect={"coverflow"}
         // overflowVisible={true}
@@ -47,7 +56,6 @@ const ReviewSlider = () => {
         centeredSlides={true}
         slidesPerView={3} // Mostrar tres testimonios al mismo tiempo por defecto
         spaceBetween={30} // Espacio entre testimonios (ajusta según tus preferencias)
-     
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
@@ -61,12 +69,13 @@ const ReviewSlider = () => {
             slidesPerView: 3,
           },
         }}
-        
       >
- 
         {reviews.map((review, index) => (
           <SwiperSlide key={review.id}>
-            <div className={`${styles.testimonial} p-4 bg-gray-200`} onClick={() => {}}>
+            <div
+              className={`${styles.testimonial} p-4 bg-gray-200`}
+              onClick={() => {}}
+            >
               <div className="rounded-full overflow-hidden w-24 h-24 mx-auto">
                 <Image
                   src={review.image}

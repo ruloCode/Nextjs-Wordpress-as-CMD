@@ -24,9 +24,9 @@ export default function Index() {
 
       <Hero />
       <Container>
-        <Testimonials />
+        <Testimonials title='Problematicas' />
         <Proposals />
-        <Testimonials />
+        <Testimonials title='Testimonios'  />
         {/* <Contact /> */}
 
         {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}

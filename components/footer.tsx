@@ -40,7 +40,7 @@ export default function Footer() {
         
         </div>
         {isContactPage && (
-            <p className="text-1xl font-bold text-center mt-3 ">
+            <p className="mt-3 text-1xl font-bold text-center  ">
               Conectando personas, Construyendo Futuro
             </p>
           )}

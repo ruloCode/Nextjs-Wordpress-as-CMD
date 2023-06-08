@@ -3,36 +3,19 @@ import Image from "next/image";
 import { Pagination, EffectCube, EffectCoverflow } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./testimonials.module.css";
+import Slide from './Slide'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-const reviews = [
-  {
-    id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id ex semper elementum.",
-    author: "John Doe",
-    image: "/images/Testimonio.png",
-  },
-  {
-    id: 2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id ex semper elementum.",
-    author: "John Doe",
-    image: "/images/Testimonio.png",
-  },
-  {
-    id: 3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id ex semper elementum.",
-    author: "John Doe",
-    image: "/images/Testimonio.png",
-  },
-];
+
 
 interface ReviewSlider {
   title?: string;
+  reviews?: any;
 }
 
-const ReviewSlider: React.FC<ReviewSlider> = ({ title }) => {
+const ReviewSlider: React.FC<ReviewSlider> = ({ title, reviews }) => {
   return (
     <div className="relative mt-20">
       {title && (
@@ -72,7 +55,8 @@ const ReviewSlider: React.FC<ReviewSlider> = ({ title }) => {
       >
         {reviews.map((review, index) => (
           <SwiperSlide key={review.id}>
-            <div
+            <Slide review={review} showVideo={title === "Testimonios"}  />
+            {/* <div
               className={`${styles.testimonial} p-4 bg-gray-200`}
               onClick={() => {}}
             >
@@ -87,7 +71,11 @@ const ReviewSlider: React.FC<ReviewSlider> = ({ title }) => {
               </div>
               <p className="text-xl">{review.text}</p>
               <p className="mt-2 font-semibold">{review.author}</p>
-            </div>
+              <button>ver video</button>
+
+
+              
+            </div> */}
           </SwiperSlide>
         ))}
       </Swiper>

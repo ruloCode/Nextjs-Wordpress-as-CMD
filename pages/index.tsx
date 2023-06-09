@@ -19,21 +19,24 @@ export default function Index() {
   const problems = [
     {
       id: 1,
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id ex semper elementum.",
+      title: "El corrupto",
+      text: " Enemigo del progreso y la democracia. Se alimenta de sobornos, sacrifica la Salud, la Educación, los servicios, sumiendo en la pobreza.",
       author: "John Doe",
-      image: "/images/Testimonio.png",
+      image: "/images/el_corrupto.png",
     },
     {
       id: 2,
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id ex semper elementum.",
+      title: "El Ladrón",
+      text: "Nos arrebata lo que tanto sudor nos costó. Vivimos a diario con angustia y temor. Roba a los más pobres sin castigo",
       author: "John Doe",
-      image: "/images/Testimonio.png",
+      image: "/images/el_ladron.png",
     },
     {
       id: 3,
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id ex semper elementum.",
+      title: "La pobreza duele",
+      text: "Sueldos insuficientes, precios inalcanzables, empleo precario. Baja calidad de vida.",
       author: "John Doe",
-      image: "/images/Testimonio.png",
+      image: "/images/pobreza.png",
     },
   ];
   const reviews = [
@@ -42,21 +45,21 @@ export default function Index() {
       text: `"Gracias al acompañamiento y guía por parte del edil Nelson Guevara hemos salvado nuestras casitas"`,
       author: "Olga Alarcón & Margarita Gil",
       image: "/images/Testimonio_1.png",
-      video: '80vYfdr19jc'
+      video: '4kNsTSx7VeI'
     },
     {
       id: 2,
       text: `"La gestión y vigilancia de los recursos públicos que hace nuestro edil en Suba, se refleja en obras que mejoran la calidad de vida de la comunidad."`,
       author: "José Contreras",
       image: "/images/Testimonio_2.png",
-      video: 'OrFxb1aJ_XI'
+      video: 'j8NVQku0OuE'
     },
     {
       id: 3,
       text: `"El gremio del reciclaje agradece las gestiones que el edil Nelson Guevara hace por nosotros y que nos ha permitido dignificar nuestro oficio, se ha convertido en nuestro representante"`,
       author: "Alirio",
       image: "/images/Testimonio_3.png",
-      video: 'UoB202r2HOY'
+      video: 'G9Hq-iBvvfA'
     },
   ];
   // const heroPost = edges[0]?.node
@@ -70,7 +73,7 @@ export default function Index() {
 
       <Hero />
       <Container>
-        <Testimonials title='Problematicas' reviews={problems} />
+        <Testimonials title='Enemigos' reviews={problems} dark />
         <Proposals />
         <Testimonials title='Testimonios' reviews={reviews}  />
         {/* <Contact /> */}

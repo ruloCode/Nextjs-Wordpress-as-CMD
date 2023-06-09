@@ -13,9 +13,10 @@ import "swiper/css/navigation";
 interface ReviewSlider {
   title?: string;
   reviews?: any;
+  dark?: boolean;
 }
 
-const ReviewSlider: React.FC<ReviewSlider> = ({ title, reviews }) => {
+const ReviewSlider: React.FC<ReviewSlider> = ({ title, reviews, dark }) => {
   return (
     <div className="relative mt-20">
       {title && (
@@ -55,27 +56,7 @@ const ReviewSlider: React.FC<ReviewSlider> = ({ title, reviews }) => {
       >
         {reviews.map((review, index) => (
           <SwiperSlide key={review.id}>
-            <Slide review={review} showVideo={title === "Testimonios"}  />
-            {/* <div
-              className={`${styles.testimonial} p-4 bg-gray-200`}
-              onClick={() => {}}
-            >
-              <div className="rounded-full overflow-hidden w-24 h-24 mx-auto">
-                <Image
-                  src={review.image}
-                  alt={`Author ${index + 1}`}
-                  width={150}
-                  height={150}
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-xl">{review.text}</p>
-              <p className="mt-2 font-semibold">{review.author}</p>
-              <button>ver video</button>
-
-
-              
-            </div> */}
+            <Slide dark={dark} review={review} showVideo={title === "Testimonios"}  />
           </SwiperSlide>
         ))}
       </Swiper>

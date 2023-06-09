@@ -10,3 +10,10 @@
   height: 420px;
   /* max-height: 300px; */
 }
+
+.darkBg {
+  background: #333;
+  color: #fafafa;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}

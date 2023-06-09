@@ -6,8 +6,9 @@ import Modal from "react-modal";
 interface SlideProps {
   review: any;
   showVideo: boolean;
+  dark?: boolean;
 }
-const Slide: React.FC<SlideProps> = ({ review, showVideo }) => {
+const Slide: React.FC<SlideProps> = ({ review, showVideo, dark }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -35,8 +36,12 @@ const Slide: React.FC<SlideProps> = ({ review, showVideo }) => {
     player.playVideo();
   };
   return (
-    <div className={`${styles.testimonial} p-4 bg-gray-200`} onClick={() => {}}>
-      <div className="rounded-full overflow-hidden w-24 h-24 mx-auto">
+<div
+  className={`${styles.testimonial} p-4 ${dark ? `${styles.darkBg} secondaryFont` : 'bg-gray-200'}`}
+  onClick={() => {}}
+>
+
+      <div className=" w-24 h-24 mx-auto">
         <Image
           src={review?.image}
           alt={`Author `}
@@ -45,8 +50,14 @@ const Slide: React.FC<SlideProps> = ({ review, showVideo }) => {
           className="object-cover"
         />
       </div>
+      {dark && (
+        <h2 className="uppercase text-3xl text-center font-bold ">{review.title}</h2>
+      )}
       <p className="text-xl">{review.text}</p>
+      {!dark && (
+
       <p className="mt-2 font-semibold">{review.author}</p>
+      )}
 
       {showVideo && (
         <div className="flex justify-end">

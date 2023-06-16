@@ -103,6 +103,13 @@ const Navbar = () => {
               <i className="fa-brands fa-twitter socialIcon"></i>
             </a>
             <a
+              href="https://www.youtube.com/@nelsonguevarafarfan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-youtube socialIcon"></i>
+            </a>
+            <a
               href="https://www.tiktok.com/@nelsonguevarafarfan"
               target="_blank"
               rel="noopener noreferrer"

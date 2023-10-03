@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="bg-accent-1 border-t border-accent-2 mt-20">
       <div>
-        {!isPromotionPage && (
+        {/* {!isPromotionPage && (
           <div className="slogan promotion  ">
             <h2 className="secondaryFont uppercase text-2xl font-bold mb-4">
               ¿ Quieres ganarte un millon de pesos ?
@@ -27,7 +27,7 @@ export default function Footer() {
               className="butonSecondary"
             />
           </div>
-        )}
+        )} */}
 
         {!isContactPage && (
           <div className="slogan ">

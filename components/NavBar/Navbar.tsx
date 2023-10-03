@@ -67,14 +67,14 @@ const Navbar = () => {
         >
           Contacto
         </Link>
-        <Link
+        {/* <Link
           href="/concurso"
           className={`secondaryFont uppercase ${
             isActive("/concurso") ? "border-b font-bold navItem" : "navItem"
           }`}
         >
           Concurso
-        </Link>
+        </Link> */}
 
 
      

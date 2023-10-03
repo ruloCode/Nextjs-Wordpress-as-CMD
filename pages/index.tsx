@@ -1,44 +1,44 @@
 import Head from "next/head";
-import { GetStaticProps } from "next";
+// import { GetStaticProps } from "next";
 import Container from "../components/container";
 import Hero from "../components/Hero/Hero";
 import Proposals from "../components/proposals/Proposals";
-import Contact from "../components/contact/Contact";
-import MoreStories from "../components/more-stories";
-import HeroPost from "../components/hero-post";
-import Intro from "../components/intro";
+// import Contact from "../components/contact/Contact";
+// import MoreStories from "../components/more-stories";
+// import HeroPost from "../components/hero-post";
+// import Intro from "../components/intro";
 import Layout from "../components/layout";
 import Testimonials from '../components/testimonials/Testimonials'
-import { getAllPostsForHome } from "../lib/api";
-import { CMS_NAME } from "../lib/constants";
+// import { getAllPostsForHome } from "../lib/api";
+// import { CMS_NAME } from "../lib/constants";
 
 export default function Index() {
 
 
 
-  const problems = [
-    {
-      id: 1,
-      title: "El corrupto",
-      text: " Enemigo del progreso y la democracia. Se alimenta de sobornos, sacrifica la Salud, la Educación, los servicios, sumiendo en la pobreza.",
-      author: "John Doe",
-      image: "/images/el_corrupto.png",
-    },
-    {
-      id: 2,
-      title: "El Ladrón",
-      text: "Nos arrebata lo que tanto sudor nos costó. Vivimos a diario con angustia y temor. Roba a los más pobres sin castigo",
-      author: "John Doe",
-      image: "/images/el_ladron.png",
-    },
-    {
-      id: 3,
-      title: "La pobreza duele",
-      text: "Sueldos insuficientes, precios inalcanzables, empleo precario. Baja calidad de vida.",
-      author: "John Doe",
-      image: "/images/pobreza.png",
-    },
-  ];
+  // const problems = [
+  //   {
+  //     id: 1,
+  //     title: "El corrupto",
+  //     text: " Enemigo del progreso y la democracia. Se alimenta de sobornos, sacrifica la Salud, la Educación, los servicios, sumiendo en la pobreza.",
+  //     author: "John Doe",
+  //     image: "/images/el_corrupto.png",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "El Ladrón",
+  //     text: "Nos arrebata lo que tanto sudor nos costó. Vivimos a diario con angustia y temor. Roba a los más pobres sin castigo",
+  //     author: "John Doe",
+  //     image: "/images/el_ladron.png",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "La pobreza duele",
+  //     text: "Sueldos insuficientes, precios inalcanzables, empleo precario. Baja calidad de vida.",
+  //     author: "John Doe",
+  //     image: "/images/pobreza.png",
+  //   },
+  // ];
   const reviews = [
     {
       id: 1,
@@ -73,7 +73,7 @@ export default function Index() {
 
       <Hero />
       <Container>
-        <Testimonials title='Enemigos' reviews={problems} dark />
+        {/* <Testimonials title='Enemigos' reviews={problems} dark /> */}
         <Proposals />
         <Testimonials title='Testimonios' reviews={reviews}  />
         {/* <Contact /> */}

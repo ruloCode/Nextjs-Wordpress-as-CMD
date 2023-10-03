@@ -37,6 +37,10 @@ export const Card = ({ imageSrc, alt, title, description, id, proposal }) => {
             zIndex: 9999,
             backgroundColor: 'rgba(0, 0, 0, 0.6)',
           },
+          content: {
+            maxWidth: '600px', // Set max width for the modal content
+            margin: 'auto',     // Center the modal horizontally
+          }
         }}
       >
         <div>

@@ -17,19 +17,20 @@ import { GetStaticProps } from "next";
 
 export default function Index() {
   const cards = [
-    {
-      id: 1,
-      imageSrc: genero,
-      alt: 'Card 1',
-      title: 'Genero',
-      description: 'Equidad y oportunidades',
-    },
+  
     {
       id: 2,
       imageSrc: movilidad,
       alt: 'Card 2',
       title: 'Movilidad',
       description: 'Accesibilidad y calidad',
+    },
+    {
+      id: 1,
+      imageSrc: genero,
+      alt: 'Card 1',
+      title: 'Genero',
+      description: 'Equidad y oportunidades',
     },
     {
       id: 3,

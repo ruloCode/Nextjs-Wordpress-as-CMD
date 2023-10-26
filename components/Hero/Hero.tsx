@@ -11,7 +11,14 @@ const Hero = () => {
       <div className={`${styles.hero__content} container mx-auto `}>
         <div className={`${styles.hero__description} text-center shadow-lg`}>
           <h1 className="text-4xl font-bold mb-4 secondaryFont">Yo quiero a Suba</h1>
-          <p className="text-lg mb-8">Conectando personas, Construyendo Futuro.</p>
+          <p className="text-lg mb-8 secondaryFont uppercase">
+            <span className={styles.blue}>
+            Conectando {' '}
+            </span>
+            <span className={styles.purple}>personas{' '} </span>
+             <span className={styles.orange}>Construyendo {' '}</span>
+             <span className={styles.green}>Futuro</span>
+              </p>
           
           <Button text="Unirme ahora" onClick={() => router.push('/contacto')} />
 

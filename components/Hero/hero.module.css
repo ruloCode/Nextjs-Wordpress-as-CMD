@@ -47,6 +47,21 @@
   /* Estilos del botón de acción */
 }
 
+.blue {
+  color: #1868B2;
+}
+.purple {
+  color: #83449A;
+}
+.orange {
+  color: #F47820;
+}
+.green {
+  color: #088041;
+}
+
+
+
 @media only screen and (min-width: 768px) {
   /*Small smartphones [325px -> 425px]*/
 

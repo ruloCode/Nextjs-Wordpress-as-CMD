@@ -6,7 +6,6 @@ import { usePathname, useRouter } from "next/navigation";
 
 
 import LogoSVG from "../../public/images/logo2.svg";
-import LogoWithText from "../../public/images/logo_with_text.png";
 
 import { RiMenu3Fill, RiCloseLine } from "react-icons/ri";
 import Button from "../../atomic-ds/atoms/Button";
@@ -33,7 +32,7 @@ const Navbar = () => {
           <div className="logoWithText">
             <Link href="/" className="">
               <Image
-                src={LogoWithText}
+                src={LogoSVG}
                 alt="Logo"
                 width={150}
                 height={150}

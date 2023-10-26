@@ -16,6 +16,62 @@ import Futuro2 from "../../public/images/futuro/futuro2.png";
 export const CardList = () => {
   const cards = [
     {
+      id: 2,
+      imageSrc: movilidad,
+      alt: "Card 2",
+      title: "Movilidad",
+      description: "Accesibilidad y calidad",
+      proposal: (
+        <>
+          <div className="p-6 mt-6 bg-white rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold mb-4">
+              Aumentaremos la protección a nuestros ciclistas y peatones
+              garantizando su seguridad:
+            </h3>
+
+            <p className="text-base mb-4">
+              Implementaremos medidas como la creación de partidas
+              presupuestarias para la creación de carriles exclusivos para
+              bicicletas y la instalación de pasos peatonales seguros en toda la
+              localidad. También promoveremos la educación vial para crear
+              conciencia sobre la importancia de respetar a los ciclistas y
+              peatones en nuestras calles.
+            </p>
+
+            <Image
+              src={Movilidad1}
+              alt="Movilidad1"
+              width={300}
+              height={300}
+              className="mr-4"
+            />
+          </div>
+          <div className="p-6 mt-6 bg-white rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold mb-4">
+              Taparemos + huecos de nuestra localidad para lograr mayor rapidez
+              y menos trancón en nuestras vías:
+            </h3>
+
+            <p className="text-base mb-4">
+              Lanzaremos un programa de mantenimiento vial intensivo que se
+              centrará en la reparación de baches y la mejora de la
+              infraestructura de nuestras carreteras. Esto no solo mejorará la
+              seguridad de los conductores, sino que también reducirá los
+              embotellamientos y el desgaste de los vehículos.
+            </p>
+
+            <Image
+              src={Movilidad2}
+              alt="Movilidad2"
+              width={300}
+              height={300}
+              className="mr-4"
+            />
+          </div>
+        </>
+      ),
+    },
+    {
       id: 1,
       imageSrc: genero,
       alt: "Card 1",
@@ -64,62 +120,6 @@ export const CardList = () => {
             <Image
               src={Genero2}
               alt="genero2"
-              width={300}
-              height={300}
-              className="mr-4"
-            />
-          </div>
-        </>
-      ),
-    },
-    {
-      id: 2,
-      imageSrc: movilidad,
-      alt: "Card 2",
-      title: "Movilidad",
-      description: "Accesibilidad y calidad",
-      proposal: (
-        <>
-          <div className="p-6 mt-6 bg-white rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold mb-4">
-              Aumentaremos la protección a nuestros ciclistas y peatones
-              garantizando su seguridad:
-            </h3>
-
-            <p className="text-base mb-4">
-              Implementaremos medidas como la creación de partidas
-              presupuestarias para la creación de carriles exclusivos para
-              bicicletas y la instalación de pasos peatonales seguros en toda la
-              localidad. También promoveremos la educación vial para crear
-              conciencia sobre la importancia de respetar a los ciclistas y
-              peatones en nuestras calles.
-            </p>
-
-            <Image
-              src={Movilidad1}
-              alt="Movilidad1"
-              width={300}
-              height={300}
-              className="mr-4"
-            />
-          </div>
-          <div className="p-6 mt-6 bg-white rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold mb-4">
-              Taparemos + huecos de nuestra localidad para lograr mayor rapidez
-              y menos trancón en nuestras vías:
-            </h3>
-
-            <p className="text-base mb-4">
-              Lanzaremos un programa de mantenimiento vial intensivo que se
-              centrará en la reparación de baches y la mejora de la
-              infraestructura de nuestras carreteras. Esto no solo mejorará la
-              seguridad de los conductores, sino que también reducirá los
-              embotellamientos y el desgaste de los vehículos.
-            </p>
-
-            <Image
-              src={Movilidad2}
-              alt="Movilidad2"
               width={300}
               height={300}
               className="mr-4"
